@@ -6,7 +6,7 @@ import javax.ejb.TransactionManagement;
 import javax.ejb.TransactionManagementType;
 import javax.enterprise.context.Dependent;
 
-//@Stateless(name = "UserBean")
+@Stateless(name = "UserBean")
 @TransactionManagement(TransactionManagementType.BEAN)
 @LocalBean
 @Dependent

@@ -1,8 +1,7 @@
 package rest;
 
-import javax.ejb.Stateless;
+import javax.ejb.EJB;
 import javax.enterprise.context.Dependent;
-import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
@@ -13,8 +12,8 @@ import service.UserBean;
 @Dependent
 public class RestBean implements IRestBean {
 
-	//@EJB
-	@Inject
+	@EJB
+	//@Inject
 	private UserBean userBean;
 
 	@Override
